@@ -1,0 +1,46 @@
+/* Base Styles and Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #333;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+/* Component Imports */
+@import '../components/Header/Header.scss';
+@import '../components/Hero/Hero.scss';
+@import '../components/About/About.scss';
+@import '../components/Projects/Projects.scss';
+@import '../components/Contact/Contact.scss';
+@import '../components/Footer/Footer.scss';
+
+/* Main Content Wrapper */
+.main-content {
+  min-height: calc(100vh - 60px); /* Adjust based on header and footer height */
+}
+
+/* Utility Classes */
+.d-none {
+  display: none;
+}

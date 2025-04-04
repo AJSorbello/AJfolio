@@ -1,0 +1,49 @@
+.contact {
+  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));
+  background-size: cover;
+  background-position: center;
+}
+
+.dynamicBg {
+  position: relative;
+  z-index: 1;
+}
+
+.heading-sec__main--lt {
+  color: #fff;
+  
+  &::after {
+    background: #fff;
+  }
+}
+
+.heading-sec__sub--lt {
+  color: #fff;
+}
+
+.email-me-button {
+  text-align: center;
+  margin-top: 2rem;
+  
+  a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 1.5rem 3rem;
+    border-radius: 5px;
+    transition: all 0.3s;
+    
+    &:hover {
+      background-color: #fff;
+      color: #0062b9;
+    }
+    
+    @media only screen and (max-width: 37.5em) {
+      font-size: 2rem;
+      padding: 1.3rem 2.5rem;
+    }
+  }
+}

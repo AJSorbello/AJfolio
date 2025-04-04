@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+  min-height: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #fff;
+  overflow-x: hidden;
+  min-width: 320px;
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.App {
+  min-height: 100vh;
+  position: relative;
+  background-color: transparent; /* Make the App container transparent */
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  min-height: calc(100vh - 60px);
+  padding-left: 60px; /* Add padding for social sidebar */
+  padding-right: 60px; /* Add equal padding on right side */
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  flex: 1;
+}
+
+section {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Text containment */
+p, h1, h2, h3, h4, h5, h6, span, div {
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Utility Classes */
+.d-none {
+  display: none;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 92%;
+  padding-left: 70px; /* Add padding for social sidebar */
+  padding-right: 70px; /* Add equal padding on right side */
+}
+
+/* Global Button Styles */
+.btn {
+  padding: 1.5rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: all 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn--bg {
+  background: #0062b9;
+  color: #fff;
+  border: none;
+}
+
+.btn--bg:hover {
+  background: #0074e0;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn--outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.btn--outline:hover {
+  background: #fff;
+  color: #0062b9;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+  
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 55%;
+  }
+  
+  .btn {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 0 3rem; /* Equal padding on both sides for mobile */
+  }
+  
+  .main-content {
+    padding: 0 3rem 6rem 3rem; /* Added bottom padding for social sidebar on mobile */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    min-width: 320px;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 0 2rem; /* Smaller but equal padding on smaller screens */
+  }
+  
+  .main-content {
+    padding: 0 2rem 6rem 2rem; /* Smaller side padding with bottom padding for social sidebar */
+  }
+  
+  .btn {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 45%;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 0 1.5rem; /* Smaller equal padding on very small screens */
+  }
+  
+  .main-content {
+    padding: 0 1.5rem 5.5rem 1.5rem; /* Smaller bottom padding for very small screens */
+  }
+  
+  .btn {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

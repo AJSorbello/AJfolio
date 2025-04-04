@@ -1,0 +1,6 @@
+.background-wrapper {
+  position: relative;
+  min-height: 100vh;
+  background: url('../../assets/images/107141768_l.jpg') no-repeat center center fixed;
+  background-size: cover;
+}

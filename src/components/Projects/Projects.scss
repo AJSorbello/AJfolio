@@ -1,0 +1,146 @@
+.projects {
+  background: #fff;
+}
+
+.heading-sec__mb-bg {
+  margin-bottom: 11rem;
+  
+  @media only screen and (max-width: 56.25em) {
+    margin-bottom: 8rem;
+  }
+}
+
+.projects__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__row {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-gap: 5rem;
+  margin-bottom: 11rem;
+  
+  @media only screen and (max-width: 56.25em) {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 8rem;
+  }
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  &:nth-child(even) {
+    grid-template-columns: 1fr 1.5fr;
+    
+    @media only screen and (max-width: 56.25em) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  &:nth-child(even) .projects__row-img-cont {
+    order: 2;
+    
+    @media only screen and (max-width: 56.25em) {
+      order: 1;
+    }
+  }
+  
+  &:nth-child(even) .projects__row-content {
+    order: 1;
+    
+    @media only screen and (max-width: 56.25em) {
+      order: 2;
+    }
+  }
+}
+
+.projects__row-img-cont {
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.projects__row-img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.projects__row-content {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  
+  @media only screen and (max-width: 56.25em) {
+    padding: 0;
+  }
+}
+
+.projects__row-content-title {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  
+  @media only screen and (max-width: 37.5em) {
+    font-size: 2.4rem;
+  }
+}
+
+.projects__row-content-desc {
+  font-size: 1.8rem;
+  color: #666;
+  max-width: 60rem;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+  
+  @media only screen and (max-width: 37.5em) {
+    font-size: 1.7rem;
+  }
+}
+
+// Buttons
+.btn--theme {
+  background: #0062b9;
+  color: #fff;
+  
+  &:hover {
+    background: #0062b9;
+  }
+}
+
+.btn--med {
+  padding: 1.5rem 5rem;
+  font-size: 1.6rem;
+  
+  @media only screen and (max-width: 56.25em) {
+    padding: 1.5rem 4rem;
+  }
+}
+
+.dynamicBgClr {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all .2s;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #0062b9;
+    z-index: -1;
+    transition: transform .4s cubic-bezier(.94,.03,.33,.97);
+    transform: translateY(100%);
+  }
+  
+  &:hover::after {
+    transform: translateY(0);
+  }
+}
