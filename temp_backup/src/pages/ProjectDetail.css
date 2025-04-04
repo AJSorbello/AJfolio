@@ -1,0 +1,231 @@
+.project-detail {
+  padding: 12rem 0 8rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.project-detail__header {
+  text-align: center;
+  margin-bottom: 5rem;
+  padding: 0 2rem;
+}
+
+.project-detail__title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #333;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 1rem;
+}
+
+.project-detail__title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 10rem;
+  height: 4px;
+  background-color: #0062b9;
+  border-radius: 2px;
+}
+
+.project-detail__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+  padding: 0 2rem 5rem;
+}
+
+.project-detail__image-container {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-detail__image {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.project-detail__image:hover {
+  transform: scale(1.03);
+}
+
+.project-detail__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-detail__description {
+  margin-bottom: 3rem;
+  color: #555;
+}
+
+.project-detail__description p {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.project-detail__description h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 3rem 0 1.5rem;
+  color: #333;
+}
+
+.project-detail__description ul {
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-detail__description li {
+  font-size: 1.7rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  position: relative;
+  list-style-type: disc;
+}
+
+.project-detail__tech {
+  margin-bottom: 3rem;
+}
+
+.project-detail__tech h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.project-detail__tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-detail__tech-item {
+  background-color: rgba(0, 98, 185, 0.1);
+  color: #0062b9;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.project-detail__tech-item:hover {
+  background-color: rgba(0, 98, 185, 0.2);
+  transform: translateY(-2px);
+}
+
+.project-detail__links {
+  display: flex;
+  gap: 2rem;
+  margin-top: auto;
+}
+
+.project-detail__links .btn {
+  padding: 1.2rem 2.5rem;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+}
+
+.project-detail__links .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-detail__navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.project-not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.project-not-found h2 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.project-not-found p {
+  font-size: 1.8rem;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+/* Animation for project detail page */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-detail {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 56.25em) {
+  .project-detail__content {
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+  }
+  
+  .project-detail__title {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .project-detail {
+    padding: 10rem 0 5rem;
+    width: 95%;
+  }
+  
+  .project-detail__header {
+    margin-bottom: 3rem;
+  }
+  
+  .project-detail__title {
+    font-size: 3rem;
+  }
+  
+  .project-detail__links {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .project-detail__description p,
+  .project-detail__description li {
+    font-size: 1.6rem;
+  }
+}

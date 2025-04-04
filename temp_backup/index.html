@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AJfolio</title>
+    <meta name="description" content="Portfolio Template for Developer" />
+
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Link to Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/Bello_Photo.png"
+              alt=""
+              class="header__logo-img" />
+          </div>
+          <span class="header__logo-sub">AJ Sorbello</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu" />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none" />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">AJ Sorbello</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            Full Stack Developer 
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="./#projects" class="btn btn--bg">Projects</a>
+          <a
+            href="./assets/AJSorbelloResume.pdf"
+            class="btn btn--bg"
+            target="_blank"
+            >Resume</a
+          >
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a
+            href="https://www.linkedin.com/in/ajsorbello/"
+            class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/linkedin-ico.png"
+              alt="icon"
+              class="home-hero__social-icon" />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://github.com/AJSorbello"
+            class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/github-ico.png"
+              alt="icon"
+              class="home-hero__social-icon" />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://x.com/AjSorbello"
+            class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/twitter-icon.png"
+              alt="icon"
+              class="home-hero__social-icon" />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://medium.com/@ajsorbello"
+            class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/medium.png"
+              alt="icon"
+              class="home-hero__social-icon" />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://www.youtube.com/channel/UCQmBAU6MYEQKtVgTEXe_MPw"
+            class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/yt-ico.png"
+              alt="icon"
+              class="home-hero__social-icon" />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://www.instagram.com/iambellomusic/"
+            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none">
+            <img
+              src="./assets/png/insta-ico.png"
+              alt="icon"
+              class="home-hero__social-icon" />
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+            I am AJ Sorbello, a dedicated Full Stack Developer who thrives in
+            collaborative environments and enjoys being a team player. With a
+            passion for creating high-performance websites and applications, I
+            bring expertise in both front-end and back-end development to ensure
+            seamless and efficient solutions tailored to meet clients' needs. My
+            focus on delivering exceptional user experiences and robust
+            functionalities drives success through innovation and meticulous
+            attention to detail. Let's work together to bring your vision to
+            life and achieve outstanding results.
+          </span>
+        </h2>
+
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title centered-title">
+              Background &amp Experience
+            </h3>
+            <div class="about__content-details">
+              <ul class="about__content-details-list">
+                <li class="about__content-details-item">
+                  Strong background in both front-end and back-end technologies.
+                </li>
+                <li class="about__content-details-item">
+                  Developed a wide range of digital products for business and
+                  consumer use.
+                </li>
+                <li class="about__content-details-item">
+                  Specialize in creating intuitive and engaging user interfaces.
+                </li>
+                <li class="about__content-details-item">
+                  Ensuring high-quality results that meet the needs of clients
+                  and users alike.
+                </li>
+                <li class="about__content-details-item">
+                  Experience includes working on remote projects.
+                </li>
+                <li class="about__content-details-item">
+                  Collaborating with talented developers.
+                </li>
+                <li class="about__content-details-item">
+                  Continuously expanding my skillset to stay updated with the
+                  latest technologies and trends in web development.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="about__content-skills">
+            <h2 class="about__content-title centered-title">My Skills</h2>
+            <div class="skills-container">
+              <div class="skills">
+                <div class="skills__category">
+                  <h2>Languages</h2>
+                  <div class="skills__skill">JavaScript</div>
+                  <div class="skills__skill">TypeScript</div>
+                  <div class="skills__skill">Python</div>
+                  <div class="skills__skill">HTML</div>
+                  <div class="skills__skill">CSS</div>
+                  <div class="skills__skill">SASS</div>
+                  <div class="skills__skill">SCSS</div>
+                </div>
+                <div class="skills__category">
+                  <h2>Frameworks &amp Libraries</h2>
+                  <div class="skills__skill">React</div>
+                  <div class="skills__skill">Node.js</div>
+                  <div class="skills__skill">Bootstrap</div>
+                  <div class="skills__skill">Firebase (Firestore, Auth)</div>
+                  <div class="skills__skill">Angular (RxJS, Angular Material)</div>
+                  <div class="skills__skill">MERN Stack (Express, MongoDB)</div>
+                  <div class="skills__skill">React-Redux</div>
+                  <div class="skills__skill">React Native</div>
+                  <div class="skills__skill">jQuery</div>
+                  <div class="skills__skill">Popper.js</div>
+                  <div class="skills__skill">Django</div>
+                    Angular (RxJS, Angular Material)
+                  </div>
+                  <div class="skills__skill">MERN Stack (Express, MongoDB)</div>
+                  <div class="skills__skill">React-Redux</div>
+                  <div class="skills__skill">React Native</div>
+                  <div class="skills__skill">jQuery</div>
+                  <div class="skills__skill">Popper.js</div>
+                </div>
+                <div class="skills__category">
+                  <h2>Tools &amp Platforms</h2>
+                  <div class="skills__skill">GIT</div>
+                  <div class="skills__skill">RESTful API</div>
+                  <div class="skills__skill">Google Calendar API</div>
+                  <div class="skills__skill">AWS Lambda</div>
+                  <div class="skills__skill">Charting libraries</div>
+                  <div class="skills__skill">Expo CLI</div>
+                  <div class="skills__skill">Postman</div>
+                  <div class="skills__skill">Android/iOS</div>
+                </div>
+                <div class="skills__category">
+                  <h2>Testing</h2>
+                  <div class="skills__skill">TDD (Test-Driven Development)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </section>
+
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            Here are some of the projects I've developed, showcasing the functionality of my web applications and the integration of iPhone and Android apps with APIs I've built: Web Applications: Explore the features and capabilities of my web apps. Mobile Apps: See how my iPhone and Android applications work seamlessly with custom APIs. Python Applications: Discover my Django projects that enhance my portfolio with versatile back-end solutions. Components: Discover the various components I've designed and implemented in these projects.
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <!-- Bello Flix Project -->
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/BelloFlix_Laptop.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy" />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Bello Flix</h3>
+              <p class="projects__row-content-desc">
+                Bello Flix is a Full-Stack movie web app that provides movie
+                information details, user authentication, and personalized
+                "favorite" movie lists. Built with the MERN stack (MongoDB,
+                Express.js, React, Node.js). Learn more by clicking "Project
+                Details".
+              </p>
+              <a
+                href="./project-1.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Project Details</a
+              >
+            </div>
+          </div>
+          <!-- Angular Flix Project -->
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="assets/png/AngularFlix_Laptop.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy" />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Angular Flix</h3>
+              <p class="projects__row-content-desc">
+                AngularFlix is a Full-Stack movie web app developed using
+                Angular and TypeScript. It provides detailed movie information,
+                user authentication, and personalized 'favorite' movie lists.
+                Learn more by clicking 'Project Details'.
+              </p>
+              <a
+                href="./project-2.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Project Details</a
+              >
+            </div>
+          </div>
+          <!-- Chat App Project -->
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/Android and iphone chat app.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy" />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Chat App</h3>
+              <p class="projects__row-content-desc">
+                I developed a Chat App for iOS and Android to showcase the
+                ability to create a seamless and interactive messaging
+                experience. The app supports real-time communication, image
+                sharing, location sharing, and offline access, demonstrating my
+                skills in building robust mobile applications with a focus on
+                user experience. This project highlights my proficiency in React
+                Native and the use of Google Firestore for efficient message
+                storage.
+              </p>
+              <a
+                href="./project-3.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Project Details</a
+              >
+            </div>
+          </div>
+                     <!-- Recipe App Project -->
+                     <div class="projects__row">
+                      <div class="projects__row-img-cont">
+                        <img
+                          src="./assets/png/RecipeApp_Laptop.png"
+                          alt="Recipe App Screenshot"
+                          class="projects__row-img"
+                          loading="lazy" />
+                      </div>
+                      <div class="projects__row-content">
+                        <h3 class="projects__row-content-title">Recipe App</h3>
+                        <p class="projects__row-content-desc">
+                          The Recipe App allows users to browse and manage a variety of recipes. Built with Django, it features user authentication, recipe categorization, and a dynamic search function. Hosted on PythonAnywhere, it provides a seamless experience for users looking to explore and save their favorite recipes.
+                        </p>
+                        <a
+                          href="./project-6.html"
+                          class="btn btn--med btn--theme dynamicBgClr"
+                          >Project Details</a>
+                      </div>
+                    </div>
+                     <!-- Bookstore App Project -->
+                    <div class="projects__row">
+                      <div class="projects__row-img-cont">
+                        <img
+                          src="./assets/png/Bookstore_Laptop.png"
+                          alt="Bookstore Screenshot"
+                          class="projects__row-img"
+                          loading="lazy" />
+                      </div>
+                      <div class="projects__row-content">
+                        <h3 class="projects__row-content-title">Bookstore</h3>
+                        <p class="projects__row-content-desc">
+                          The Bookstore is an online platform built using Django that enables users to search, browse, and purchase books. Deployed on Heroku, it features a clean user interface, shopping cart functionality, and user reviews. This project showcases my ability to create scalable web applications with robust back-end support.
+                        </p>
+                        <a
+                          href="./project-7.html"
+                          class="btn btn--med btn--theme dynamicBgClr"
+                          >Project Details</a>
+                      </div>
+                    </div>
+          <!--Meet App Project-->
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/CityLinkUp.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy" />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Meet App</h3>
+              <p class="projects__row-content-desc">
+                Build a serverless PWA using React with TDD. Integrates Google
+                Calendar API for fetching events. Features offline access, event
+                visualization with charts, and location-based event filtering
+                for seamless user experience.
+              </p>
+              <a
+                href="./project-4.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Project Details</a
+              >
+            </div>
+          </div>
+          <!-- Pokedex App Project -->
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/Pokedex_SShot.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy" />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Pokedex App</h3>
+              <p class="projects__row-content-desc">
+                Pokedex is my very first app created with HTML, CSS, and Javascript. It
+                loads a list of different pokemon characters from the pokemon
+                api. This app allows you to click on a pokemon characters name
+                and a small window will pop up to reveal it's image, height,
+                type of pokemon.
+              </p>
+              <a
+                href="./project-5.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >Project Details</a
+              >
+            </div>
+          </div>
+          </div>
+        </div>
+  </section>
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            Contact me for your next project and let's discuss!
+            <!-- Contact Me Email Link -->
+            <br />
+            <br />
+            <div class="email-me-button">
+              <a href="mailto:ajsorbello@gmail.com">ajsorbello@gmail.com</a>
+            </div>
+          </span>
+        </h2>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a rel="noreferrer" href="https://www.linkedin.com/in/ajsorbello">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon" />
+              </a>
+              <a rel="noreferrer" href="https://github.com/AJSorbello">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon" />
+              </a>
+              <a rel="noreferrer" href="https://x.com/AjSorbello">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-icon.png"
+                  alt="icon" />
+              </a>
+              <a
+                rel="noreferrer"
+                href="https://www.youtube.com/channel/UCQmBAU6MYEQKtVgTEXe_MPw">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/yt-ico.png"
+                  alt="icon" />
+              </a>
+              <a
+                rel="noreferrer"
+                href="https://www.instagram.com/iambellomusic/">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon" />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">AJ Sorbello</h4>
+            <p class="main-footer__short-desc">
+              Full Stack Development Portfolio
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-footer__lower">&copy; Copyright 2024.</div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

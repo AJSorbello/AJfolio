@@ -1,0 +1,162 @@
+.social-sidebar {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* When expanded and past hero section */
+.social-sidebar.past-hero.expanded {
+  left: 0;
+  padding-left: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* When collapsed and past hero section */
+.social-sidebar.past-hero.collapsed {
+  left: -60px;
+  cursor: pointer;
+}
+
+/* The toggle indicator (white slit) */
+.toggle-indicator {
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.social-sidebar.expanded .toggle-indicator {
+  right: 0;
+  height: 60px;
+}
+
+.social-sidebar.collapsed .toggle-indicator {
+  right: -5px;
+}
+
+.social-sidebar.collapsed:hover .toggle-indicator {
+  background-color: white;
+  width: 7px;
+  height: 70px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.social-sidebar__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem 1rem;
+  transition: opacity 0.3s ease;
+}
+
+.social-sidebar.collapsed .social-sidebar__links {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.social-sidebar__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-sidebar__link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+  .social-sidebar {
+    transform: scale(0.9);
+  }
+}
+
+/* Hide sidebar at intermediate resolutions where header icons are shown */
+@media screen and (max-width: 900px) and (min-width: 769px) {
+  .social-sidebar {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .social-sidebar {
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    transform: translateY(0);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    padding: 1rem 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .social-sidebar.past-hero.expanded,
+  .social-sidebar.past-hero.collapsed {
+    left: 0;
+    padding-left: 0;
+    border-radius: 0;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .toggle-indicator {
+    display: none; /* Hide toggle indicator on mobile */
+  }
+  
+  .social-sidebar__links {
+    flex-direction: row;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    padding: 0.5rem;
+    gap: 2rem;
+  }
+  
+  .social-sidebar__link {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* Specific adjustments for very small screens */
+@media screen and (max-width: 480px) {
+  .social-sidebar__links {
+    gap: 1.5rem;
+  }
+  
+  .social-sidebar__link {
+    width: 2.8rem;
+    height: 2.8rem;
+    font-size: 1.4rem;
+  }
+}
