@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/AJfolio/static/css/main.5da14173.css",
-    "main.js": "/AJfolio/static/js/main.d40e3ed6.js",
-    "static/js/453.73681842.chunk.js": "/AJfolio/static/js/453.73681842.chunk.js",
-    "index.html": "/AJfolio/index.html",
-    "main.5da14173.css.map": "/AJfolio/static/css/main.5da14173.css.map",
-    "main.d40e3ed6.js.map": "/AJfolio/static/js/main.d40e3ed6.js.map",
-    "453.73681842.chunk.js.map": "/AJfolio/static/js/453.73681842.chunk.js.map"
+    "main.css": "/ajfolio/static/css/main.47d53ccf.css",
+    "main.js": "/ajfolio/static/js/main.dbb285d2.js",
+    "static/js/488.a9b1a053.chunk.js": "/ajfolio/static/js/488.a9b1a053.chunk.js",
+    "index.html": "/ajfolio/index.html",
+    "main.47d53ccf.css.map": "/ajfolio/static/css/main.47d53ccf.css.map",
+    "main.dbb285d2.js.map": "/ajfolio/static/js/main.dbb285d2.js.map",
+    "488.a9b1a053.chunk.js.map": "/ajfolio/static/js/488.a9b1a053.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5da14173.css",
-    "static/js/main.d40e3ed6.js"
+    "static/css/main.47d53ccf.css",
+    "static/js/main.dbb285d2.js"
   ]
 }
