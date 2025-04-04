@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="main-footer__top">
           <div className="main-footer__logo-container">
             <div className="main-footer__logo-img">
-              <img src="/assets/png/Bello_Photo.png" alt="AJ Sorbello" />
+              <img src={process.env.PUBLIC_URL + "/assets/png/Bello_Photo.png"} alt="AJ Sorbello" />
             </div>
             <h3 className="main-footer__name">AJ Sorbello</h3>
           </div>
@@ -47,7 +47,7 @@ const Footer = () => {
             <button onClick={() => handleScrollTo('about')} className="btn btn--outline">About</button>
             <button onClick={() => handleScrollTo('projects')} className="btn btn--outline">Projects</button>
             <button onClick={() => handleScrollTo('contact')} className="btn btn--outline">Contact</button>
-            <a href="/assets/AJ_Sorbello_Resume_4_2_25.pdf" className="btn btn--outline" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href={process.env.PUBLIC_URL + "/assets/AJ_Sorbello_Resume_4_2_25.pdf"} className="btn btn--outline" target="_blank" rel="noopener noreferrer">Resume</a>
           </div>
         </div>
         

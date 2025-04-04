@@ -54,7 +54,7 @@ const Header = () => {
         <div className="header__logo-container">
           <div className="header__logo-img-cont">
             <img
-              src="/assets/png/Bello_Photo.png"
+              src={process.env.PUBLIC_URL + "/assets/png/Bello_Photo.png"}
               alt="AJ Sorbello Profile"
               className="header__logo-img"
             />

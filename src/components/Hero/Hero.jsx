@@ -18,7 +18,7 @@ const Hero = () => {
         </p>
         <div className="home-hero__cta">
           <button onClick={handleScrollToProjects} className="btn btn--outline">View Projects</button>
-          <a href="/assets/AJ_Sorbello_Resume_4_2_25.pdf" className="btn btn--outline" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a href={process.env.PUBLIC_URL + "/assets/AJ_Sorbello_Resume_4_2_25.pdf"} className="btn btn--outline" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
       </div>
       

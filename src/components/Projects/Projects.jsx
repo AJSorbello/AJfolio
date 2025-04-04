@@ -8,7 +8,7 @@ const Projects = () => {
       id: 1,
       title: 'Build It Records',
       description: 'An underground house music label I founded in 2015. Features artist profiles, music releases, and demo submissions using node-mailer. Built with React, Typescript, JS and Node.js, includes streaming integration and a custom CMS for managing music releases across sub-labels: Build It Deep and Build It Tech.',
-      image: '/assets/png/BuildItRecords_Laptop.png',
+      image: process.env.PUBLIC_URL + '/assets/png/BuildItRecords_Laptop.png',
       githubLink: 'https://github.com/AJSorbello/buildit-records',
       liveLink: 'https://www.builditrecords.com',
       technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Supabase', 'Vercel', 'Render'],
@@ -18,7 +18,7 @@ const Projects = () => {
       id: 2,
       title: 'Bello Flix',
       description: 'Bello Flix is a Full-Stack movie web app that provides movie information details, user authentication, and personalized "favorite" movie lists. Built with the MERN stack (MongoDB, Express.js, React, Node.js).',
-      image: '/assets/png/BelloFlix_Laptop.png',
+      image: process.env.PUBLIC_URL + '/assets/png/BelloFlix_Laptop.png',
       githubLink: 'https://github.com/AJSorbello/bello-flix',
       liveLink: 'https://belloflix.netlify.app/'
     },
@@ -26,7 +26,7 @@ const Projects = () => {
       id: 3,
       title: 'Angular Flix',
       description: 'AngularFlix is a Full-Stack movie web app developed using Angular and TypeScript. It provides detailed movie information, user authentication, and personalized favorite movie lists.',
-      image: '/assets/png/AngularFlix_Laptop.png',
+      image: process.env.PUBLIC_URL + '/assets/png/AngularFlix_Laptop.png',
       githubLink: 'https://github.com/AJSorbello/angular-flix',
       liveLink: 'https://angularflix.netlify.app/'
     },
@@ -34,7 +34,7 @@ const Projects = () => {
       id: 4,
       title: 'Chat App',
       description: 'A mobile chat application for iOS and Android that supports real-time communication, image sharing, location sharing, and offline access.',
-      image: '/assets/png/Android and iphone chat app.png',
+      image: process.env.PUBLIC_URL + '/assets/png/Android and iphone chat app.png',
       githubLink: 'https://github.com/AJSorbello/chat-app',
       liveLink: 'https://expo.dev/@ajsorbello/chat-app'
     },
@@ -42,7 +42,7 @@ const Projects = () => {
       id: 5,
       title: 'Meet App',
       description: 'A serverless PWA using React with TDD. Integrates Google Calendar API for fetching events.',
-      image: '/assets/png/CityLinkUp.png',
+      image: process.env.PUBLIC_URL + '/assets/png/CityLinkUp.png',
       githubLink: 'https://github.com/AJSorbello/meet-app',
       liveLink: 'https://ajsorbello.github.io/meet-app/'
     },
@@ -50,7 +50,7 @@ const Projects = () => {
       id: 6,
       title: 'Pokedex App',
       description: 'Pokedex is my first app created with HTML, CSS, and Javascript. It loads Pokemon characters from the Pokemon API.',
-      image: '/assets/png/Pokedex_SShot.png',
+      image: process.env.PUBLIC_URL + '/assets/png/Pokedex_SShot.png',
       githubLink: 'https://github.com/AJSorbello/pokedex-app',
       liveLink: 'https://ajsorbello.github.io/pokedex-app/'
     },
@@ -58,7 +58,7 @@ const Projects = () => {
       id: 7,
       title: 'Recipe App',
       description: 'The Recipe App allows users to browse and manage a variety of recipes. Built with Django.',
-      image: '/assets/png/RecipeApp_Laptop.png',
+      image: process.env.PUBLIC_URL + '/assets/png/RecipeApp_Laptop.png',
       githubLink: 'https://github.com/AJSorbello/recipe-app',
       liveLink: 'https://ajsorbello.pythonanywhere.com/'
     },
@@ -66,7 +66,7 @@ const Projects = () => {
       id: 8,
       title: 'Bookstore',
       description: 'The Bookstore is an online platform built using Django that enables users to search, browse, and purchase books.',
-      image: '/assets/png/Bookstore_Laptop.png',
+      image: process.env.PUBLIC_URL + '/assets/png/Bookstore_Laptop.png',
       githubLink: 'https://github.com/AJSorbello/bookstore',
       liveLink: 'https://ajsorbello-bookstore.herokuapp.com/'
     }
