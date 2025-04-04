@@ -22,6 +22,8 @@ body {
   width: 100%;
   position: relative;
   min-height: 100vh;
+  /* Background is now set via JavaScript in App.js */
+  background-color: #111;
 }
 
 a {
