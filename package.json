@@ -2,7 +2,7 @@
   "name": "ajfolio-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ajsorbello.github.io/AJfolio/",
+  "homepage": "https://ajsorbello.github.io/ajfolio/",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
