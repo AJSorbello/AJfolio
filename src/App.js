@@ -9,8 +9,10 @@ import SocialSidebar from './components/SocialSidebar/SocialSidebar';
 
 function App() {
   useEffect(() => {
-    // Set background image dynamically using PUBLIC_URL
-    document.body.style.backgroundImage = `url(${process.env.PUBLIC_URL}/assets/jpeg/107141768_l.jpg)`;
+    // Update to use absolute path for GitHub Pages
+    const backgroundImageUrl = `${process.env.PUBLIC_URL}/assets/jpeg/107141768_l.jpg`;
+    console.log('Background image URL:', backgroundImageUrl); // Debug log
+    document.body.style.backgroundImage = `url(${backgroundImageUrl})`;
     document.body.style.backgroundPosition = 'center';
     document.body.style.backgroundSize = 'cover';
     document.body.style.backgroundRepeat = 'no-repeat';
