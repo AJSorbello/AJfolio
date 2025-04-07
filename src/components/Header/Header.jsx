@@ -82,7 +82,13 @@ const Header = () => {
               &times;
             </button>
             <li className="header__link-wrapper">
-              <Link to="/" className="header__link" onClick={closeMenu}>
+              <Link to="/" className="header__link" onClick={(e) => {
+                closeMenu();
+                if (window.location.pathname === '/') {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+              }}>
                 Home
               </Link>
             </li>
