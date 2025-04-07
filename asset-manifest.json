@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ajfolio/static/css/main.94f3e8c7.css",
+    "main.js": "/ajfolio/static/js/main.43dc6bbe.js",
+    "static/js/488.a9b1a053.chunk.js": "/ajfolio/static/js/488.a9b1a053.chunk.js",
+    "index.html": "/ajfolio/index.html",
+    "main.94f3e8c7.css.map": "/ajfolio/static/css/main.94f3e8c7.css.map",
+    "main.43dc6bbe.js.map": "/ajfolio/static/js/main.43dc6bbe.js.map",
+    "488.a9b1a053.chunk.js.map": "/ajfolio/static/js/488.a9b1a053.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94f3e8c7.css",
+    "static/js/main.43dc6bbe.js"
+  ]
+}
