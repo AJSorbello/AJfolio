@@ -12,6 +12,13 @@ const Footer = () => {
     }
   };
   
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+  
   return (
     <footer className="main-footer">
       <div className="main-footer__content">
@@ -44,9 +51,9 @@ const Footer = () => {
         
         <div className="main-footer__navigation">
           <div className="main-footer__nav-list">
-            <button onClick={() => handleScrollTo('about')} className="btn btn--outline">About</button>
-            <button onClick={() => handleScrollTo('projects')} className="btn btn--outline">Projects</button>
-            <button onClick={() => handleScrollTo('contact')} className="btn btn--outline">Contact</button>
+            <button onClick={scrollToTop} className="btn btn--outline back-to-top-btn">
+              <i className="fas fa-arrow-up"></i> Back to Top
+            </button>
             <a href={process.env.PUBLIC_URL + "/assets/AJ_Sorbello_Resume_4_2_25.pdf"} className="btn btn--outline" target="_blank" rel="noopener noreferrer">Resume</a>
           </div>
         </div>

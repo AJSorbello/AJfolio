@@ -92,6 +92,24 @@
   max-width: 180px;
 }
 
+.back-to-top-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  background-color: rgba(0, 98, 185, 0.2);
+  transition: all 0.3s;
+}
+
+.back-to-top-btn:hover {
+  background-color: #0062b9;
+  transform: translateY(-3px);
+}
+
+.back-to-top-btn i {
+  font-size: 1.6rem;
+}
+
 .main-footer__nav-link {
   color: #fff;
   font-size: 1.6rem;
