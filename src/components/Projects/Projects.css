@@ -1,5 +1,5 @@
 .projects {
-  background-color: rgba(0, 0, 0, 0.4);
+  /* Remove the redundant background overlay since we now have a global one */
   padding: 15rem 0;
   overflow-x: hidden;
 }

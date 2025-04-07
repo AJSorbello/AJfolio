@@ -9,10 +9,13 @@ import SocialSidebar from './components/SocialSidebar/SocialSidebar';
 
 function App() {
   useEffect(() => {
-    // Update to use absolute path for GitHub Pages
+    // Apply a consistent background for the entire site
     const backgroundImageUrl = `${process.env.PUBLIC_URL}/assets/jpeg/107141768_l.jpg`;
     console.log('Background image URL:', backgroundImageUrl); // Debug log
-    document.body.style.backgroundImage = `url(${backgroundImageUrl})`;
+    
+    // Apply background to body with a much lighter overlay to show the slate texture
+    document.body.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${backgroundImageUrl})`;
+    document.body.style.backgroundAttachment = 'fixed'; // Keep background fixed while scrolling
     document.body.style.backgroundPosition = 'center';
     document.body.style.backgroundSize = 'cover';
     document.body.style.backgroundRepeat = 'no-repeat';

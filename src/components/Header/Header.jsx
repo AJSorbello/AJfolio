@@ -83,10 +83,14 @@ const Header = () => {
             </button>
             <li className="header__link-wrapper">
               <Link to="/" className="header__link" onClick={(e) => {
+                e.preventDefault();
                 closeMenu();
-                if (window.location.pathname === '/') {
-                  e.preventDefault();
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                if (window.location.pathname !== '/') {
+                  // If not on home page, navigate to home page after a small delay to allow smooth scroll
+                  setTimeout(() => {
+                    window.location.href = '/';
+                  }, 100);
                 }
               }}>
                 Home
