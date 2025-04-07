@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './SocialSidebar.css';
 
 const SocialSidebar = () => {
-  const [isVisible, setIsVisible] = useState(true);
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [isPastHero, setIsPastHero] = useState(false);
 
@@ -22,7 +21,6 @@ const SocialSidebar = () => {
         } else {
           setIsPastHero(false);
           setIsCollapsed(false);
-          setIsVisible(true);
         }
       }
     };

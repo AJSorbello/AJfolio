@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// Removed the unused Link import
 import { scrollToSection } from '../../utils/scrollUtils';
 import './Hero.css';
 
