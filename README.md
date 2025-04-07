@@ -25,7 +25,7 @@ The site is structured to highlight my technical expertise, project work, and pr
 
 ## 🚀 Live Demo
 
-Visit my portfolio at: [https://ajsorbello.netlify.app/](https://ajsorbello.netlify.app/)
+Visit my portfolio at: [https://ajsorbello.github.io/ajfolio/](https://ajsorbello.github.io/ajfolio/)
 
 ## ✨ Features
 
@@ -63,8 +63,8 @@ Visit my portfolio at: [https://ajsorbello.netlify.app/](https://ajsorbello.netl
 - **VS Code**: Primary development environment
 
 ### Deployment & Hosting
-- **Netlify**: Continuous deployment and hosting platform
-- **GitHub Pages**: Alternative hosting solution
+- **GitHub Pages**: Primary hosting solution
+- **Netlify**: Alternative hosting solution
 
 ## 🔍 Project Showcase
 
@@ -148,15 +148,27 @@ npm start
 
 ## 🔄 Deployment
 
-This portfolio is configured for seamless deployment to Netlify:
+This portfolio is configured for deployment to GitHub Pages:
 
 1. Fork this repository
-2. Connect your GitHub account to Netlify
-3. Select the repository for deployment
-4. Configure build settings:
-   - Build command: `npm run build`
-   - Publish directory: `build`
-5. Deploy!
+2. Set up GitHub Pages in your repository settings
+3. Install the gh-pages package:
+   ```bash
+   npm install --save-dev gh-pages
+   ```
+4. Add these scripts to your package.json:
+   ```json
+   "predeploy": "npm run build",
+   "deploy": "gh-pages -d build"
+   ```
+5. Set the homepage in your package.json:
+   ```json
+   "homepage": "https://yourusername.github.io/your-repo-name/"
+   ```
+6. Deploy by running:
+   ```bash
+   npm run deploy
+   ```
 
 ## 🧪 Testing
 
