@@ -18,7 +18,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename="/AJfolio">
+    <Router>
       <div className="App">
         <Header />
         <SocialSidebar />

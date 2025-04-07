@@ -20,7 +20,7 @@ const Projects = () => {
       description: 'Bello Flix is a Full-Stack movie web app that provides movie information details, user authentication, and personalized "favorite" movie lists. Built with the MERN stack (MongoDB, Express.js, React, Node.js).',
       image: process.env.PUBLIC_URL + '/assets/png/BelloFlix_Laptop.png',
       githubLink: 'https://github.com/AJSorbello/bello-flix',
-      liveLink: 'https://belloflix.netlify.app/'
+      liveLink: 'https://bellomovies.netlify.app/'
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ const Projects = () => {
       description: 'AngularFlix is a Full-Stack movie web app developed using Angular and TypeScript. It provides detailed movie information, user authentication, and personalized favorite movie lists.',
       image: process.env.PUBLIC_URL + '/assets/png/AngularFlix_Laptop.png',
       githubLink: 'https://github.com/AJSorbello/angular-flix',
-      liveLink: 'https://angularflix.netlify.app/'
+      liveLink: 'https://ajsorbello.github.io/myFlix-Angular-client/'
     },
     {
       id: 4,
@@ -44,7 +44,7 @@ const Projects = () => {
       description: 'A serverless PWA using React with TDD. Integrates Google Calendar API for fetching events.',
       image: process.env.PUBLIC_URL + '/assets/png/CityLinkUp.png',
       githubLink: 'https://github.com/AJSorbello/meet-app',
-      liveLink: 'https://ajsorbello.github.io/meet-app/'
+      liveLink: 'https://ajsorbello.github.io/meet/'
     },
     {
       id: 6,
@@ -52,7 +52,7 @@ const Projects = () => {
       description: 'Pokedex is my first app created with HTML, CSS, and Javascript. It loads Pokemon characters from the Pokemon API.',
       image: process.env.PUBLIC_URL + '/assets/png/Pokedex_SShot.png',
       githubLink: 'https://github.com/AJSorbello/pokedex-app',
-      liveLink: 'https://ajsorbello.github.io/pokedex-app/'
+      liveLink: 'https://ajsorbello.github.io/Pokedex/'
     },
     {
       id: 7,
@@ -68,7 +68,7 @@ const Projects = () => {
       description: 'The Bookstore is an online platform built using Django that enables users to search, browse, and purchase books.',
       image: process.env.PUBLIC_URL + '/assets/png/Bookstore_Laptop.png',
       githubLink: 'https://github.com/AJSorbello/bookstore',
-      liveLink: 'https://ajsorbello-bookstore.herokuapp.com/'
+      liveLink: 'https://ajbooks-5dee885a9073.herokuapp.com/'
     }
   ];
 
